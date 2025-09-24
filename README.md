@@ -1,5 +1,5 @@
-Permite cambiar el numero de usuarios virtuales, la duracion y el numero de iteraciones
-Forma larga
+1. Permite cambiar el numero de usuarios virtuales, la duracion y el numero de iteraciones
+   Forma larga
 
 ```bash
 k6 run script.js --vus 1 --duration 10s --iterations 1
@@ -58,4 +58,18 @@ Permite ejecutar el test localmente y subir el resultado a grafana cloud
 
 ```bash
 k6 run script.js -o cloud
+```
+
+# Comandos Git
+
+Permite ver la diferencia de cambios con respecto al staged
+
+```bash
+git diff --staged
+```
+
+Permite agregar al staged y mensaje en el commit
+
+```bash
+git commit -am ""
 ```
