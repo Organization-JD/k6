@@ -83,6 +83,13 @@ git commit --amend -m "README.md actualizado"
 Permite deshacer los cambios del ultimo commit e historial
 Permite renombrar el archivo moviendo dentro de la misma carpeta
 Permite eliminar el archivo
+Permite borrar todo el contenido del stash, borra todos los stash
+Permite retornar los cambios de un stash especifico
+Permite eliminar los cambios de un stash especifico
+Permite obtener mas informacion de los stash
+Permite guardar stash con mensaje personalizado
+Permite ordenar los commits de la rama misiones completadas con la rama master
+Permite utilizar rebase interactivo para muchos cambios (HEAD apunta al ultimo commit)
 
 ```bash
 git reset --soft HEAD^
@@ -95,4 +102,11 @@ git tag "nombre-tag"
 git tag -d "nombre-tag"
 git tag -a v1.0.0 -m "Version 1.0.0 lista"
 git tag -a v1.0.0 "hash del commit que queremos" -m "Version beta lista"
+git stash clear
+git stash apply stash@{2}
+git stash drop stash@{2}
+git stash list --stat
+git stash save "mensaje personalizado"
+git rebase master
+git rebase -i HEAD~
 ```
