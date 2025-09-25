@@ -73,3 +73,26 @@ Permite agregar al staged y mensaje en el commit
 ```bash
 git commit -am ""
 ```
+
+Permite actualizar el mensaje en el commit
+
+```bash
+git commit --amend -m "README.md actualizado"
+```
+
+Permite deshacer los cambios del ultimo commit e historial
+Permite renombrar el archivo moviendo dentro de la misma carpeta
+Permite eliminar el archivo
+
+```bash
+git reset --soft HEAD^
+git reflog
+git mv README.md readme.md
+git rm README.md
+git merge "nombre-rama"
+git branch -d "nombre-rama" -f
+git tag "nombre-tag"
+git tag -d "nombre-tag"
+git tag -a v1.0.0 -m "Version 1.0.0 lista"
+git tag -a v1.0.0 "hash del commit que queremos" -m "Version beta lista"
+```
