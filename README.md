@@ -90,6 +90,7 @@ Permite obtener mas informacion de los stash
 Permite guardar stash con mensaje personalizado
 Permite ordenar los commits de la rama misiones completadas con la rama master
 Permite utilizar rebase interactivo para muchos cambios (HEAD apunta al ultimo commit)
+Permite subir todos los tags a github
 
 ```bash
 git reset --soft HEAD^
@@ -109,4 +110,5 @@ git stash list --stat
 git stash save "mensaje personalizado"
 git rebase master
 git rebase -i HEAD~
+git push --tag
 ```
