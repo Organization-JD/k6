@@ -124,3 +124,9 @@ git branch -d nombreRama
 git remote prune origin
 git commit -am "Fixes #2: Resuelto! prueba de cerrar issue mediante commit"
 ```
+
+Permite crear clave ssh
+
+```bash
+ssh-keygen -t rsa -C "jdavid42mh93@gmail.com"
+```
