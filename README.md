@@ -49,14 +49,10 @@ k6 cloud login --token def7e0a17d880d698e0f1ef6546ca878eacb9657f1da32dc89027c412
 ```
 
 Permite ejecutar el test en grafana clud
-
-```bash
-k6 cloud run script.js
-```
-
 Permite ejecutar el test localmente y subir el resultado a grafana cloud
 
 ```bash
+k6 cloud run script.js
 k6 run script.js -o cloud
 ```
 
