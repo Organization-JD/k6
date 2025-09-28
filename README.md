@@ -96,6 +96,7 @@ Permite traer informacion del repositorio upstream
 Permite realizar configuraciones globales como username, email, alias, etc
 Permite eliminar ramas locales
 Permite actualizar referencias a ramas remotas
+Permite cerrar issue mediante commit
 
 ```bash
 git reset --soft HEAD^
@@ -121,4 +122,5 @@ git pull upstream master
 git config --global -e
 git branch -d nombreRama
 git remote prune origin
+git commit -am "Fixes #2: Resuelto! prueba de cerrar issue mediante commit"
 ```
