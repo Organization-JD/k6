@@ -91,6 +91,11 @@ Permite guardar stash con mensaje personalizado
 Permite ordenar los commits de la rama misiones completadas con la rama master
 Permite utilizar rebase interactivo para muchos cambios (HEAD apunta al ultimo commit)
 Permite subir todos los tags a github
+Permite agregar un nuevo repositorio de solo lectura
+Permite traer informacion del repositorio upstream
+Permite realizar configuraciones globales como username, email, alias, etc
+Permite eliminar ramas locales
+Permite actualizar referencias a ramas remotas
 
 ```bash
 git reset --soft HEAD^
@@ -111,4 +116,9 @@ git stash save "mensaje personalizado"
 git rebase master
 git rebase -i HEAD~
 git push --tag
+git remote add upstream <link>
+git pull upstream master
+git config --global -e
+git branch -d nombreRama
+git remote prune origin
 ```
